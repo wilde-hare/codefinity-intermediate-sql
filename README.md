@@ -4,6 +4,8 @@ GROUP BY column1
 
 
 But, as you can see, we get an error indicating that we cannot use aggregate functions inside a WHERE clause. This is where we'll need the HAVING clause.+
+The WHERE clause is used before data aggregation, while the HAVING clause is used after data aggregation;
+The WHERE clause is written before GROUP BY, while the HAVING clause is written after GROUP BY.
 
 SELECT column1, column2 --(optional)
 FROM table
