@@ -11,3 +11,13 @@ SELECT column1, column2 --(optional)
 FROM table
 GROUP BY column1
 HAVING AGG(column_n) --(condition)
+
+Nested Queries
+
+SELECT columns
+FROM table_1
+WHERE column_name IN (
+  SELECT column
+  FROM table_2
+  other clauses
+)
