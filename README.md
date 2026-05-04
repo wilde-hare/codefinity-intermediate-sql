@@ -21,3 +21,8 @@ WHERE column_name IN (
   FROM table_2
   other clauses
 )
+for JOINS
+SELECT table1.column, table2.column 
+FROM table1 -- this is the LEFT table
+LEFT JOIN table 2 -- this is the RIGHT table
+ON table1.common_column = table2.common_column
